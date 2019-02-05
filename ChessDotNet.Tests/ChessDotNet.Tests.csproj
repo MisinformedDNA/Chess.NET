@@ -16,6 +16,7 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsTestProject>true</IsTestProject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,7 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ChessDotNetTestsKey.snk" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ChessDotNet\ChessDotNet.csproj">
